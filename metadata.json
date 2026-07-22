@@ -1,0 +1,6 @@
+{
+  "name": "Rajesh - AI Full Stack Portfolio",
+  "description": "A premium responsive portfolio website for Rajesh, featuring AI-inspired UI/UX, featured projects like AI Crop Doctor, interactive visual stats, skill highlights, and a contact gateway.",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}
