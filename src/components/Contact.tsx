@@ -106,6 +106,27 @@ export default function Contact() {
                 <span>CONNECT WITH ME</span>
               </div>
 
+              <div className="p-4 bg-slate-950/70 border border-slate-800 rounded-2xl flex items-center gap-4 shadow-lg relative overflow-hidden group">
+                <div className="absolute top-0 right-0 w-24 h-24 bg-cyan-500/10 rounded-full blur-xl pointer-events-none group-hover:bg-cyan-500/20 transition-all" />
+                <div className="relative w-14 h-14 shrink-0 rounded-full overflow-hidden border-2 border-cyan-400/60 p-0.5 bg-slate-900 shadow-md">
+                  <img
+                    src={ownerInfo.avatar}
+                    alt={ownerInfo.name}
+                    className="w-full h-full object-cover rounded-full group-hover:scale-105 transition-transform duration-300"
+                    referrerPolicy="no-referrer"
+                  />
+                </div>
+                <div>
+                  <div className="flex items-center gap-2">
+                    <h4 className="font-display font-bold text-base text-white">{ownerInfo.name}</h4>
+                    <span className="px-2 py-0.5 bg-emerald-500/10 border border-emerald-500/30 rounded-full text-[9px] font-mono font-semibold text-emerald-400">
+                      ONLINE
+                    </span>
+                  </div>
+                  <p className="text-xs text-slate-400 font-mono mt-0.5">{ownerInfo.title}</p>
+                </div>
+              </div>
+
               <h3 className="font-display font-bold text-2xl text-white tracking-tight">
                 Direct Coordinates &amp; Social Channels
               </h3>
