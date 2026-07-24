@@ -32,7 +32,7 @@ export default function ResumeSection() {
           <div className="flex flex-wrap gap-x-4 gap-y-1 mt-2 text-xs text-slate-500">
             <span>Tamil Nadu, India</span>
             <span>•</span>
-            <span>patutammu0315@gmail.com</span>
+            <span>demigodgamingawn@gmail.com</span>
           </div>
         </div>
 
@@ -109,31 +109,31 @@ export default function ResumeSection() {
             <div className="space-y-4">
               <div>
                 <div className="flex justify-between items-center">
+                  <h4 className="text-xs font-bold text-slate-900">Aura AI</h4>
+                  <span className="text-[10px] font-mono text-blue-600 bg-blue-50 px-2 py-0.5 rounded-full font-bold">NEXT.JS • GEMINI</span>
+                </div>
+                <p className="text-[11px] text-slate-600 mt-1 leading-relaxed">
+                  Unified multimodal creative workspace featuring Aura Canvas, Studio, Write, Voice, Vision, and image/video synthesis.
+                </p>
+              </div>
+
+              <div>
+                <div className="flex justify-between items-center">
+                  <h4 className="text-xs font-bold text-slate-900">Smart Leave Management System</h4>
+                  <span className="text-[10px] font-mono text-blue-600 bg-blue-50 px-2 py-0.5 rounded-full font-bold">REACT • EXPRESS • PRISMA</span>
+                </div>
+                <p className="text-[11px] text-slate-600 mt-1 leading-relaxed">
+                  Full-stack college leave platform with multi-role RBAC, online mentor approval workflow, and PDFKit letter generation.
+                </p>
+              </div>
+
+              <div>
+                <div className="flex justify-between items-center">
                   <h4 className="text-xs font-bold text-slate-900">AI Crop Doctor</h4>
-                  <span className="text-[10px] font-mono text-blue-600 bg-blue-50 px-2 py-0.5 rounded-full font-bold">REACT • GEMINI</span>
+                  <span className="text-[10px] font-mono text-blue-600 bg-blue-50 px-2 py-0.5 rounded-full font-bold">PYTHON • COMPUTER VISION</span>
                 </div>
                 <p className="text-[11px] text-slate-600 mt-1 leading-relaxed">
-                  Web scanning ecosystem helping farmers diagnose disease via leaf imagery. Delivers targeted treatment checklists in English and Tamil with weather integrations.
-                </p>
-              </div>
-
-              <div>
-                <div className="flex justify-between items-center">
-                  <h4 className="text-xs font-bold text-slate-900">AI Resume Analyzer</h4>
-                  <span className="text-[10px] font-mono text-blue-600 bg-blue-50 px-2 py-0.5 rounded-full font-bold">NODE • EXPRESS</span>
-                </div>
-                <p className="text-[11px] text-slate-600 mt-1 leading-relaxed">
-                  Document parsing framework utilizing custom prompt engineering templates to extract resume keywords and evaluate real-time ATS scores.
-                </p>
-              </div>
-
-              <div>
-                <div className="flex justify-between items-center">
-                  <h4 className="text-xs font-bold text-slate-900">Smart Attendance facial recogniser</h4>
-                  <span className="text-[10px] font-mono text-blue-600 bg-blue-50 px-2 py-0.5 rounded-full font-bold">PYTHON • OPENCV</span>
-                </div>
-                <p className="text-[11px] text-slate-600 mt-1 leading-relaxed">
-                  Face recognition logs platform pairing OpenCV computer vision scanners with dual dynamic backup QR generators.
+                  Agritech computer vision platform for instant leaf disease diagnosis, Tamil voice recommendations, and weather insights.
                 </p>
               </div>
             </div>

@@ -20,9 +20,21 @@ export interface SkillCategory {
 export interface Project {
   id: string;
   title: string;
+  category: string;
+  label?: string;
+  tagline?: string;
   description: string;
+  overview: string;
+  problemStatement: string;
+  solution: string;
   features: string[];
+  featurePills?: string[];
   techStack: string[];
+  status: "Active Development" | "Completed / Production Ready" | "AI Innovation Project" | string;
+  isFeatured?: boolean;
+  workflow?: string[];
+  challengesSolved?: string[];
+  futureImprovements?: string[];
   image: string;
   liveUrl?: string;
   githubUrl?: string;
@@ -42,6 +54,8 @@ export interface Certificate {
   title: string;
   issuer: string;
   date: string;
+  focus: string;
+  skills: string[];
   credentialUrl?: string;
   image: string;
 }
