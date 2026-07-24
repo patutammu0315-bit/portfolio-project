@@ -1,6 +1,7 @@
 import React, { useState, useEffect } from "react";
 import { motion, AnimatePresence } from "motion/react";
 import { Menu, X, Code, Terminal } from "lucide-react";
+import { ownerInfo } from "../data";
 
 export default function Navbar() {
   const [isOpen, setIsOpen] = useState(false);
@@ -68,10 +69,15 @@ export default function Navbar() {
         <a
           href="#home"
           onClick={(e) => handleNavClick(e, "#home")}
-          className="flex items-center gap-2 group font-display font-bold text-lg tracking-wider"
+          className="flex items-center gap-2.5 group font-display font-bold text-lg tracking-wider"
         >
-          <div className="p-1.5 bg-blue-500/10 border border-blue-500/20 rounded-lg group-hover:border-cyan-500/40 transition-colors">
-            <Terminal className="w-5 h-5 text-cyan-400 group-hover:scale-110 transition-transform" />
+          <div className="relative w-8 h-8 rounded-full overflow-hidden border border-cyan-500/40 p-0.5 bg-slate-900 group-hover:border-cyan-400 group-hover:scale-105 transition-all">
+            <img
+              src={ownerInfo.avatar}
+              alt={ownerInfo.name}
+              className="w-full h-full object-cover rounded-full"
+              referrerPolicy="no-referrer"
+            />
           </div>
           <span className="text-white group-hover:text-cyan-400 transition-colors">
             RAJESH<span className="text-blue-500">.</span>

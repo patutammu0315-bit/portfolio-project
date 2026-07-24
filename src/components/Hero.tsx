@@ -2,6 +2,7 @@ import { motion } from "motion/react";
 import { ArrowRight, Download, Mail, Terminal, Sparkles } from "lucide-react";
 import TypingAnimation from "./TypingAnimation";
 import ParticleBackground from "./ParticleBackground";
+import { ownerInfo } from "../data";
 
 export default function Hero() {
   const typingWords = [
@@ -51,6 +52,34 @@ export default function Hero() {
           <div className="inline-flex items-center gap-2 px-3.5 py-1.5 bg-blue-500/10 border border-blue-500/20 hover:border-cyan-500/30 transition-colors rounded-full text-xs font-mono tracking-wide text-cyan-400">
             <Sparkles className="w-3.5 h-3.5 animate-pulse text-cyan-400" />
             <span>INTELLIGENT SYSTEMS PORTFOLIO // v1.2</span>
+          </div>
+        </motion.div>
+
+        {/* Profile Image Avatar Display */}
+        <motion.div
+          initial={{ opacity: 0, scale: 0.85 }}
+          animate={{ opacity: 1, scale: 1 }}
+          transition={{ duration: 0.7, delay: 0.1 }}
+          className="mb-8 relative group cursor-pointer"
+          onClick={() => handleScrollTo("about")}
+        >
+          {/* Glowing Ring Effect */}
+          <div className="absolute -inset-1.5 bg-gradient-to-r from-blue-500 via-cyan-400 to-indigo-500 rounded-full blur-lg opacity-40 group-hover:opacity-80 transition duration-500" />
+          
+          <div className="relative w-32 h-32 sm:w-36 sm:h-36 md:w-40 md:h-40 rounded-full overflow-hidden border-2 border-cyan-400/50 p-1 bg-slate-950 shadow-2xl">
+            <img
+              src={ownerInfo.avatar}
+              alt={ownerInfo.name}
+              className="w-full h-full object-cover rounded-full group-hover:scale-105 transition-transform duration-500"
+              referrerPolicy="no-referrer"
+            />
+          </div>
+
+          {/* Active Status Badge */}
+          <div className="absolute bottom-1 right-1 sm:bottom-2 sm:right-2 flex items-center gap-1.5 px-3 py-1 bg-slate-950/90 border border-slate-700/80 rounded-full shadow-xl backdrop-blur-md">
+            <span className="w-2 h-2 rounded-full bg-emerald-400 animate-ping" />
+            <span className="w-2 h-2 rounded-full bg-emerald-400 absolute" />
+            <span className="text-[10px] font-mono text-emerald-400 font-semibold tracking-wider ml-2">ACTIVE</span>
           </div>
         </motion.div>
 
